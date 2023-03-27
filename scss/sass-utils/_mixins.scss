@@ -1,0 +1,216 @@
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+@mixin font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin disp-flex-wr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin disp-flex-nwr {
+    display: flex;
+}
+
+@mixin text-style-upper {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin text-style-initial {
+    text-decoration: none;
+    text-transform: initial;
+}
+
+@mixin text-style-capitalize {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+    position: relative;
+    width:  $circle-size;
+    height: $circle-size;
+    padding: 0;
+    border-radius: 50%; 
+    list-style: none;       
+    
+    > * {
+      display: block;
+      position: absolute;
+      top:  50%; 
+      left: 50%;
+      width:  $item-size;
+      height: $item-size;
+      margin: -($item-size / 2);
+    
+      $angle: (360 / $item-count);
+      $rot: 0;
+  
+      @for $i from 1 through $item-count {
+        &:nth-of-type(#{$i}) {
+          transform: 
+            rotate($rot * 1deg) 
+            translate($circle-size / 1.35) 
+            rotate($rot * -1deg);
+        }
+  
+        $rot: $rot + $angle;
+      }
+      @include media-max(1200px) {
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+              rotate($rot * 1deg) 
+              translate($circle-size / 1.56) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+      }
+      @include media-max(992px) {
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+              rotate($rot * 1deg) 
+              translate($circle-size / 1.9) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+      }
+      @include media-max(640px) {
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+            rotate($rot * 1deg) 
+            translate($circle-size / 2.4) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+        width:  100px;
+        height: 60px;
+      }
+      @include media-max(300px) {
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+            rotate($rot * 1deg) 
+            translate($circle-size / 2.9) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+        width:  80px;
+        height: 60px;
+        top: -4px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+      }
+      // @for $i from 1 through $item-count {
+      //   &:nth-of-type(#{$i}) {
+      //     transform: 
+      //       rotate($rot * 1deg) 
+      //       translate($circle-size / 2) 
+      //       rotate($rot * -1deg);
+      //   }
+  
+      //   $rot: $rot + $angle;
+      // }
+    }
+  }
+
+  @mixin on-circle-2($item-count, $circle-size, $item-size) {
+    position: relative;
+    width:  $circle-size;
+    height: $circle-size;
+    padding: 0;
+    border-radius: 50%; 
+    list-style: none;       
+    
+    > * {
+      display: block;
+      position: absolute;
+      top:  50%; 
+      left: 50%;
+      width:  $item-size;
+      height: $item-size;
+      margin: -($item-size / 2);
+    
+      $angle: (360 / $item-count);
+      $rot: 0;
+  
+      @for $i from 1 through $item-count {
+        &:nth-of-type(#{$i}) {
+          transform: 
+            rotate($rot * 1deg) 
+            translate($circle-size / 3.6) 
+            rotate($rot * -1deg);
+        }
+  
+        $rot: $rot + $angle;
+      }
+      @include media-max(992px) {
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+              rotate($rot * 1deg) 
+              translate($circle-size / 5) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+      }
+      @include media-max(640px) {
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+              rotate($rot * 1deg) 
+              translate($circle-size / 5.5) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+      }
+      @include media-max(640px) {
+        width:  100px;
+        height: 60px;
+      }
+      @include media-max(300px) {
+        width:  80px;
+        height: 60px;
+        @for $i from 1 through $item-count {
+          &:nth-of-type(#{$i}) {
+            transform: 
+              rotate($rot * 1deg) 
+              translate($circle-size / 7.5) 
+              rotate($rot * -1deg);
+          }
+    
+          $rot: $rot + $angle;
+        }
+      }
+    }
+    @include media-max(992px) {
+      width:  15em;
+      height: 15em;
+    }
+    @include media-max(640px) {
+      width:  13em;
+      height: 13em;
+    }
+  }

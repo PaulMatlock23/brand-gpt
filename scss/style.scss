@@ -1,0 +1,23 @@
+
+@import './sass-utils/variables';
+@import './sass-utils/mixins';
+@import './components/responsive';
+@import './base/reset';
+@import './base/typography';
+
+
+
+@import './components/buttons';
+@import './components/cover';
+
+@import './layout/forms';
+@import './layout/header';
+@import './pages/landing-page';
+@import './pages/home';
+@import './pages/messaging';   
+@import './pages/faqs.scss';
+@import './pages/about-us';
+@import './pages/blogs';
+@import './pages/blog-detail';
+@import './pages/terms-&-conditions';
+@import './layout/footer';

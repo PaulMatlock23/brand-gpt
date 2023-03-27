@@ -1,0 +1,553 @@
+.accounts-main {
+    min-height: 100vh;
+    height: 100vh;
+    @include media-max(1040px) {
+        min-height: 80vh;
+        height: 80vh;
+    }
+}
+
+.accounts-form-main {
+    position: relative;
+    height: 100%;
+    @include disp-flex-wr;
+    align-items: center;
+    justify-content: center;
+}
+
+.accounts-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 60px;
+    border-radius: 6px;
+    background-color: $white;
+    position: relative;
+    @include media-max(1440px) {
+        scale: 0.8;
+    }
+    @include media-max(992px) {
+        padding: 30px;
+        max-width: 70%;
+    }
+    @include media-max(600px) {
+        padding: 20px;
+        max-width: 90%;
+        scale: 1;
+    }
+}
+
+.accounts-form-head {
+    h3 {
+        color: $blue-zodiac;
+        font-size: $f-30;
+        line-height: 36px;
+        font-weight: 700;
+        margin: 0 0 8px;
+        @include media-max(640px) {
+            line-height: normal;
+            font-size: 20px;
+        }
+    }
+    p {
+        color: $eternity;
+        font-weight: 400;
+        font-size: $f-16;
+        line-height: 24px;
+        opacity: .7;
+        @include media-max(640px) {
+            line-height: normal;
+            font-size: 15px;
+        }
+    }
+}
+
+.accounts-form-close {
+    position: absolute;
+    right: 32px;
+    top: 37px;
+    button {
+        background: transparent;
+        border: 0px;
+        outline: none;
+        @include media-max(640px) {
+            width: 23px;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    @include media-max(640px) {
+        right: 12px;
+        top: 17px;
+    }
+}
+
+.accounts-form-body {
+    margin: 40px 0px 0px;
+    @include media-max(640px) {
+        margin: 10px 0px 0px;
+    }
+}
+
+.comm-field {
+    position: relative;
+    height: 75px;
+    input {
+        width: 100%;
+        height: 75px;
+        padding: 0px 60px 0 20px;
+        background: $white;
+        border: 1px solid $porcelain;
+        border-radius: 6px;
+        box-sizing: border-box;
+        color: $gordons-green;
+        line-height: normal;
+        font-size: $f-16;
+        font-weight: 400;
+        @include media-max(640px) {
+            padding: 0 40px 0px 10px;
+            font-size: 12px !important; 
+            &:not(:placeholder-shown) + label {
+                top: 7px !important;
+            }
+            height: 60px;
+        }
+        &::placeholder {
+            opacity: 0;
+        }
+        &:focus + label {
+            top: 10px;
+            bottom: auto;
+            font-size: $f-12;
+            color: $gull-gray;
+        }
+        &:not(:placeholder-shown) + label {
+            top: 10px;
+            bottom: auto;
+            font-size: $f-12;
+            color: $gull-gray;
+        }
+    }
+    label {
+        position: absolute;
+        left: 20px;
+        top: 0px;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+        color: $shuttle-gray;
+        font-weight: 400;
+        font-size: $f-16;
+        line-height: normal;
+        transition: .2s ease-in-out;
+        pointer-events: none;
+        touch-action: none;
+        @include media-max(640px) {
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            font-size: 11px !important;
+        }
+    }
+    @include media-max(640px) {
+        height: 60px;
+    }
+}
+
+.acc-pass-field {
+    margin: 20px 0px 0px;
+    position: relative;
+    .password-eyes {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        width: 30px;
+        height: 30px;
+        @include disp-flex-wr;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 0px;
+        outline: none;
+        span {
+            cursor: pointer;
+            img {
+                max-width: 100%;
+            }
+            @include media-max(640px) {
+                width: 15px;
+            }
+        }
+        .password-eye-close {
+            display: none;
+        }
+        @include media-max(640px) {
+            right: 3px;
+        }
+    }
+    .changeIcon .password-eye-close {
+        display: block;
+    }   
+    .changeIcon .password-eye-open {
+        display: none;
+    }
+}
+
+@include media-max(640px) {
+    .acc-form-field .edit-button {
+        right: 10px;
+        top: 0 !important;
+        bottom: 0;
+        margin: auto;
+        height: 10px;
+    }
+}
+
+.acc-form-field {
+    position: relative;
+    .edit-button {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        font-size: calc(6px + 0.8vw);
+        font-weight: 400;
+        line-height: normal;
+        color: #566477;
+        cursor: pointer;
+        bottom: 0;
+        height: max-content;
+        margin: auto;
+        @include media-max(640px) {
+            right: 10px;
+        }
+    }
+}
+
+.valid-password .length.valid, .valid-password .length.valid svg path {
+    color: $green-haze;
+    stroke: $green-haze;
+}
+
+// .acc-form-field input:empty ~ .edit-button  {
+//     display: none;
+// }
+.acc-form-field input:not(:placeholder-shown) ~ .edit-button  {
+    display: block;
+}
+
+.acc-form-submit {
+    margin: 24px 0 0;
+    button {
+        width: 100%;
+        border: 0px;
+        outline: none;
+        border-radius: 6px;
+        font-size: $f-16;
+        font-weight: 500;
+        line-height: normal;
+        min-height: 60px;
+        @include media-max(640px) {
+            padding: 12px 12px;
+            line-height: normal;
+            min-height: 40px;
+            font-size: 15px;
+        }
+    }
+    @include media-max(640px) {
+        margin: 10px 0px 0px;
+    }
+}
+
+.accounts-options-single:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.account-already {
+    margin: 24px 0px;
+    text-align: center;
+    p {
+        font-weight: 400;
+        font-size: $f-16;
+        line-height: normal;
+        color: $eternity;
+        @include font-roboto;
+        a {
+            font: inherit;
+            opacity: inherit;
+            color: $seance;
+            font-weight: 500;
+        }
+        @include media-max(640px) {
+            line-height: normal;
+            font-size: 12px;
+        }
+    }
+    @include media-max(640px) {
+        margin: 14px 0px;            
+    }
+}
+
+.accounts-options-ask {
+    text-align: center;
+    position: relative;
+    p {
+        background: #fff;
+        padding: 5px 14px;
+        position: relative;
+        z-index: 1;
+        color: rgba(30, 33, 13, .7);
+        text-transform: uppercase;
+        display: inline-block;
+        @include font-roboto;
+        font-size: $f-14;
+    }
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: $porcelain;
+        content: "";
+        width: 100%;
+        height: 1px;
+    }
+}
+
+
+.accounts-options-single {
+    a {
+        @include disp-flex-wr;
+        align-items: center;
+        gap: 12px;
+        background: $white;
+        border: 1px solid $porcelain;
+        border-radius: 6px;
+        min-height: 60px;
+        justify-content: center;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        &:hover {
+            box-shadow: 0 -1px 0 rgb(0 0 0 / 4%), 0 2px 4px rgb(0 0 0 / 25%);
+        }        
+        span {
+            img {
+                max-width: 100%;
+            }
+        }
+        @include media-max(640px) {
+            min-height: 40px;
+            .account-option-icon {
+                width: 18px;
+            }
+        }
+    }
+}
+
+.account-option-text {
+    font-weight: 400;
+    font-size: $f-16;
+    line-height: normal;
+    color: $shuttle-gray;
+    @include media-max(640px) {
+        font-size: 12px;
+    }
+}
+
+.accounts-options {
+    margin: 21px 0px 0px;
+    @include media-max(640px) {
+        margin: 10px 0px 0px;
+    }
+}
+
+.account-roles-list-item {
+    min-height: 60px;
+    background: $white;
+    border: 2px solid $porcelain;
+    border-radius: 6px;
+    @include disp-flex-wr;
+    align-items: center;
+    padding: 18px 20px;
+    position: relative;
+    box-sizing: border-box;
+    input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        &:checked + label::before {
+            background: linear-gradient(90deg, #FB0131 0%, #8B1EC8 100%);
+            border: 0px;
+        }
+        &:checked + label::after {
+            opacity: 1;
+        }
+    }
+    label {
+        color: $cod-gray;
+        font-weight: 400;
+        font-size: $f-14;
+        line-height: normal;
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        @include media-max(640px) {
+            line-height: normal;
+            font-size: 12px;
+        }
+        &::before {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            content: "";
+            border: 2px solid #DDE1E3;
+            border-radius: 50%;
+            @include media-max(640px) {
+                width: 14px;
+                height: 14px;
+                margin: auto;
+            }
+        }
+        &::after {
+            position: absolute;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            content: "";
+            width: 4px;
+            height: 8px;
+            right: 7px;
+            top: 4px;
+            opacity: 0;
+            @include media-max(640px) {
+                width: 2px;
+                height: 5px;
+                border-width: 0 2px 2px 0;
+                right: 5px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    &.isChecked {
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FB0131, #8B1EC8) border-box;
+        border: 2px solid transparent;
+    }
+    &:hover {
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FB0131, #8B1EC8) border-box;
+        border: 2px solid transparent;
+    }
+    @include media-max(640px) {
+        padding: 12px 10px;
+    }
+}
+
+.valid-password-container {
+    margin: 20px 0px 0px;
+    background: $white;
+    border: 1px solid $porcelain;
+    border-radius: 6px;
+    padding: 20px 20px;
+    p {
+        font-weight: 400;
+        font-size: $f-14;
+        line-height: normal;
+        color: $shuttle-gray;
+        margin: 0 0 14px;
+        @include media-max(640px) {
+            margin: 0 0 4px;
+        }
+    }
+    ul {
+        li {
+            font-weight: 400;
+            font-size: $f-14;
+            line-height: normal;
+            color: $shuttle-gray;
+            &.length {
+                color: red;
+            }
+            // &.length.valid {
+
+            // }
+        }
+    }
+    @include media-max(640px) {
+        padding: 10px 10px;
+    }
+}
+
+.verify-email-container {
+    max-width: 350px;
+    margin: 0 auto;
+    .accounts-form-head {
+        text-align: center;
+    }
+}
+
+
+.mail-container {
+    margin: 28px auto 0px;
+    max-width: 310px;
+    .open-gmail-link {
+        margin: 0 0 28px;
+        a {
+            background: #E9ECEF;
+            border: 1px solid $porcelain;
+            border-radius: 6px;
+            @include disp-flex-wr;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+            gap: 13px;
+            color: $gordons-green;
+            font-weight: 400;
+            font-size: $f-16;
+            line-height: normal;
+            text-decoration: none;
+            span {
+                img {
+                    max-width: 100%;
+                }
+            }
+            @include media-max(640px) {
+                min-height: 40px;
+                span {
+                    width: 18px;
+                    height: 20px;
+                }
+                font-size: 12px;
+            }
+        }
+    }
+    .resend-email {
+        text-align: center;
+        a {
+            color: $green-haze;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: $f-16;
+            line-height: normal;
+            @include font-roboto;
+            @include media-max(640px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+

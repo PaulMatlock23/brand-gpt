@@ -1,0 +1,244 @@
+:root {
+    background-color: $spring-green-fade;
+    color: $geyser;
+}
+
+body {
+    // background-color: $spring-green-fade;
+    // color: $geyser;
+    scroll-behavior: smooth;
+    transition: none !important;
+    &.no-scroll, &.no-scroll-2, &.no-scroll-3 {
+        height: 100vh;
+        overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+    }
+}
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $geyser;
+}
+
+p {
+    color: $white;
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    display: inline-block;
+    color: $white;
+}
+
+button {
+    display: inline-block;
+}
+
+main {
+    position: relative;
+}
+
+.b-img {
+    display: block;
+    max-width: 100%;
+}
+
+.just-cont-sta {
+    justify-content: flex-start;
+}
+
+.just-cont-bet {
+    justify-content: space-between;
+}
+
+.just-cont-end {
+    justify-content: flex-end;
+}
+
+.just-cont-center {
+    justify-content: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.btn-click {
+    cursor: pointer;
+}
+
+[data-theme="dark"] {
+    $swamp: #fff;
+    $conflower-blue: #F7F7F8;
+    $gordons-green: #0F1106;
+    $eternity : #1E210D;
+    $ebony: #101828;
+    $spring-green-fade: #002737;
+    $athens-gray: #F2F4F7;
+    $tiber-new: #0A233C;
+    $iron: #DDE1E4;
+    $athens-gray-2: #F5F5F8;
+    $green-vogue: #031E4D;
+    background-color: $geyser;
+    color: red;
+    #second-header, .home-main-section, .recent-chats-list ul li a:hover, .faqs-main-section, .faqs-main .faqs-flex .left-faqs .topic-title, .site-faq-single.active {
+        background-color: $swamp;
+    }
+    .second-header-right .second-header-nav ul li a, .recent-chats-list ul li a {
+        color: $ebony;
+    }
+    @include media-max(800px) {
+        .second-header-nav ul li a, .light-mode-text {
+            color: $swamp !important;
+        }
+        .second-header-right .second-header-nav ul li a svg path, .light-mode label .light-mode-text svg path {
+            stroke: $swamp !important;
+        }
+    }
+    .second-header-right .second-header-nav ul li a:hover, .recent-chats-list ul li a:hover, .faqs-main .faqs-flex .left-faqs .topic-title.active {
+        color: $swamp;
+    }
+    .second-header-right .second-header-nav ul li a svg path {
+        stroke: $ebony;
+    }
+    .second-header-right .second-header-nav ul li a:hover svg path {
+        stroke: $swamp;
+    }
+    #second-header {
+        border-bottom-color: $athens-gray;
+    }
+    .home-content-flex .home-content-left, .faqs-main {
+        border-color: $athens-gray;
+    }
+    .recent-chats-list ul li a:hover {
+        background-color: $spring-green-fade;
+    }
+    .recent-chats-list ul li.active a {
+        color: $swamp;
+    }
+    .recent-chats-list ul li a svg path {
+        stroke : $gordons-green;
+    }
+    .recent-chats-list ul li.active a svg path, .recent-chats-list ul li a:hover svg path {
+        stroke: $swamp;
+    }
+    .recent-chats-list ul li a svg circle, .recent-chats-list ul li a svg ellipse {
+        fill : $gordons-green;
+    }
+    .recent-chats-list ul li.active a svg circle, .recent-chats-list ul li.active a svg ellipse, .recent-chats-list ul li a:hover svg circle, .recent-chats-list ul li a:hover svg ellipse {
+        fill : $swamp;
+    }
+    .home-content-flex .home-content-right, .home-content-intro-col, .home-chat-form, .response-single-row.answer-row {
+        background-color: $conflower-blue;
+    }
+    .home-content-intro-col-heading h4, .new-chat a, .home-content-flex .home-content-left .home-content-head h1 {
+        color: $gordons-green;
+    }
+    .new-chat a {
+        border-color: $spring-green-fade;
+    }
+    .new-chat a span svg path {
+        fill: $gordons-green;
+    }
+    .home-content-intro-col-inner-content p, .response-single-row.question-row .response-content p, .response-single-row.answer-row .response-content p {
+        color: $eternity;
+    }
+    .home-chat-form form .chat-form-input input {
+        color: $eternity;
+    }
+    .chat-form-submit button span svg path {
+        fill: $eternity;
+    }
+    .faqs-main .faqs-flex .left-faqs .topic-title, .site-faq-question h4, .site-faq-single .site-faq-single-body p {
+        color: $tiber-new;
+    }
+    .faqs-flex .left-faqs .topic-title span svg path {
+        fill: $tiber-new;
+    }
+    .faqs-flex .left-faqs .topic-title.active span svg path {
+        fill: $white;
+    }
+    .site-faq-single {
+        border-top-color: $iron;
+    }
+    .site-faq-single .site-faq-question span {
+        background-color: $athens-gray-2;
+    }
+    .site-faq-single .site-faq-question span svg path {
+        stroke: $green-vogue;
+    }
+    .bulleted-list-items ul li::after {
+        background-color: $gordons-green;
+    }
+    // .second-header-right .second-header-nav {
+    //     background-color: $swamp;
+    // }
+    .second-header-right .header-hamburger button span {
+        background-color: $spring-green-fade;
+    }
+    .side-bar-opener button span {
+        background-color: $spring-green-fade;
+    }
+    .side-bar-close button span {
+        background-color: $spring-green-fade;
+    }
+    .faqs-main .faqs-flex .left-faqs {
+        box-shadow: 3px 0 17px rgba(0, 0, 0, 0.22);
+    }
+    .side-bar-close {
+        background-color: $conflower-blue;
+    }
+}
+
+
+// If user prefers a dark appearance 
+//  @media (prefers-color-scheme: light) {
+//     :root {
+//        background-color: $white;
+//      color: $eternity;
+//      }
+
+//     h1, h2, h3, h4, h5, h6 {
+//          color: $eternity;
+//     }
+
+//      p {
+//         color : $eternity;
+//         opacity: .8;
+//     }
+
+//  }

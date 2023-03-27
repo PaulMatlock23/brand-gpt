@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="dark-mode-active">
+    <header class="second-header" id="second-header">
+        <div class="second-header-main">
+            <div class="container-40">
+                <div class="second-header-content">
+                    <div class="second-header-flex">
+                        <div class="second-header-left">
+                            <div class="header-logo">
+                                <a href="./index.html">
+                                    <img src="./images/logo-dark.svg" alt="Logo">
+                                </a>
+                            </div>
+                            <div class="header-logo-light">
+                                <a href="./index.html">
+                                    <img src="./images/light-mode-logo.svg" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="second-header-right">
+                            <div class="second-header-nav">
+                                <nav>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="./index.html">
+                                                <span class="nav-item-icon">
+                                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.66667 13.3332C8.30961 14.4544 9.7803 14.4341 12.3333 13.3332M16.5 8.45845V14.9722C16.5 16.8284 15.0076 18.3332 13.1667 18.3332H4.83333C2.99238 18.3332 1.5 16.8284 1.5 14.9722V8.45845C1.5 7.44931 1.9497 6.49359 2.72488 5.85527L6.89155 2.42429C8.11859 1.41391 9.88141 1.41391 11.1084 2.42429L15.2751 5.85527C16.0503 6.49358 16.5 7.44931 16.5 8.45845Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="light-mode">
+                                            <label class="theme-switch" for="checkbox">
+                                                <input type="checkbox" id="checkbox" />
+                                                <div class="light-mode-text">
+                                                    <span class="nav-item-icon dark-mode-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.99967 1.6665V2.49984M9.99967 17.4998V18.3332M4.10711 4.10729L4.69637 4.69654M15.303 15.3031L15.8922 15.8924M1.66634 9.99984H2.49967M17.4997 9.99984H18.333M4.10714 15.8924L4.69639 15.3031M15.303 4.69654L15.8922 4.10729M4.99967 9.99984C4.99967 12.7613 7.23825 14.9998 9.99967 14.9998C12.7611 14.9998 14.9997 12.7613 14.9997 9.99984C14.9997 7.23841 12.7611 4.99984 9.99967 4.99984C7.23825 4.99984 4.99967 7.23841 4.99967 9.99984Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="nav-item-icon light-mode-icon">
+                                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13.7736 11.3905C9.54083 11.3905 6.10946 7.95917 6.10946 3.72636C6.10946 2.95205 6.22428 2.20457 6.43783 1.5C3.2908 2.45384 1 5.3773 1 8.83581C1 13.0686 4.43137 16.5 8.66419 16.5C12.1227 16.5 15.0462 14.2092 16 11.0622C15.2954 11.2757 14.5479 11.3905 13.7736 11.3905Z" stroke="#28303F" stroke-width="1.5" stroke-linejoin="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                    Light Mode
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <a href="./faqs.html">
+                                                <span class="nav-item-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.4997 7.49999L17.4997 2.5M17.4997 2.5L12.4997 2.5M17.4997 2.5L8.33301 11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 4.1665H6.5C4.29086 4.1665 2.5 5.95736 2.5 8.1665V13.4998C2.5 15.709 4.29086 17.4998 6.5 17.4998H11.8333C14.0425 17.4998 15.8333 15.709 15.8333 13.4998V9.99984" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                        
+                                                </span>
+                                                FAQ’s
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#.">
+                                                <span class="nav-item-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.667 11.6665L17.6266 10.7069C18.0171 10.3164 18.0171 9.68326 17.6266 9.29273L16.667 8.33317" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M17.5003 10.0002H10.8337M5.00033 16.6668C3.15938 16.6668 1.66699 15.1744 1.66699 13.3335V6.66683C1.66699 4.82588 3.15938 3.3335 5.00033 3.3335M5.00033 16.6668C6.84127 16.6668 8.33366 15.1744 8.33366 13.3335V6.66683C8.33366 4.82588 6.84127 3.3335 5.00033 3.3335M5.00033 16.6668H11.667C13.5079 16.6668 15.0003 15.1744 15.0003 13.3335M5.00033 3.3335H11.667C13.5079 3.3335 15.0003 4.82588 15.0003 6.66683" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                    </svg>                                                                                                            
+                                                </span>
+                                                Log Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-hamburger">
+                                <button>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="home-main-section">
+            <div class="container-40">
+                <div class="home-main">
+                    <div class="home-content-flex">
+                        <div class="side-bar-opener">
+                            <button>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="home-content-left">
+                            <div class="home-content-intro-container">
+                                <div class="home-content-head">
+                                    <h1>Brand GPT</h1>
+                                </div>
+                                <div class="home-content-intro">
+                                    <div class="home-content-intro-flex">
+                                        <div class="home-content-intro-col">
+                                            <div class="home-content-intro-col-icon">
+                                                <span>
+                                                    <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.9997 6.08895V29.8375M6.33301 9.75773C8.44264 10.0844 10.796 10.6276 12.9997 11.4798M6.33301 16.4244C7.39882 16.5895 8.52684 16.8098 9.66634 17.0973M4.65689 1.01879C8.35418 1.43658 13.3216 2.56053 16.8611 5.04074C17.5413 5.51742 18.458 5.51742 19.1383 5.04074C22.6778 2.56053 27.6452 1.43658 31.3425 1.01879C33.1723 0.812016 34.6663 2.34004 34.6663 4.2253V22.9999C34.6663 24.8852 33.1723 26.4138 31.3425 26.6205C27.6452 27.0383 22.6778 28.1623 19.1383 30.6425C18.458 31.1192 17.5413 31.1192 16.8611 30.6425C13.3216 28.1623 8.35418 27.0383 4.65689 26.6205C2.82705 26.4138 1.33301 24.8852 1.33301 22.9999V4.2253C1.33301 2.34004 2.82705 0.812016 4.65689 1.01879Z" stroke="#868E96" stroke-width="1.5" stroke-linecap="round"/>
+                                                    </svg>                                                    
+                                                </span>
+                                            </div>
+                                            <div class="home-content-intro-col-heading">
+                                                <h4>What is BrandGPT?</h4>
+                                            </div>
+                                            <div class="home-content-intro-col-inner-content intro-paragraphs">
+                                                <p>Brands GPT is a natural language processing
+                                                    platform developed by OpenAI that helps businesses develop and manage their brand messaging.</p>
+                                                <p>It uses deep learning to create high-quality brand content, analyze customer feedback, and provide insights on brand performance.</p>
+                                                <p>The platform is designed to help companies enhance their brand messaging and create more impactful customer experiences.</p>
+                                            </div>
+                                        </div>
+                                        <div class="home-content-intro-col">
+                                            <div class="home-content-intro-col-icon">
+                                                <span>
+                                                    <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M21.5435 1H26.2523C27.2646 1 28.2285 1.43834 28.901 2.20445L33.7712 7.75249C34.9014 9.04003 34.9687 10.9592 33.9314 12.3246L20.8086 29.5994C19.39 31.4669 16.6093 31.4669 15.1907 29.5994L2.06793 12.3246C1.03068 10.9592 1.09794 9.04003 2.22816 7.75249L7.09832 2.20445C7.77083 1.43834 8.73477 1 9.74703 1H14.8496M21.5435 1L25.0874 9.97142M21.5435 1H14.8496M25.0874 9.97142H33.9471M25.0874 9.97142L17.9997 30.6057L10.9119 9.97142M25.0874 9.97142H10.9119M14.8496 1L10.9119 9.97142M2.05228 9.97142H10.9119" stroke="#868E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                    
+                                                </span>
+                                            </div>
+                                            <div class="home-content-intro-col-heading">
+                                                <h4>Benefits of BrandGPT</h4>
+                                            </div>
+                                            <div class="home-content-intro-col-inner-content bulleted-list-items">
+                                                <ul>
+                                                    <li>
+                                                        <p>Saves time and resources</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Ensures consistency in brand messaging</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Improves engagement with target audience</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Provides valuable insights on brand performance</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Scalable for generating high-quality content</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Can create different types of content</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="home-content-intro-col">
+                                            <div class="home-content-intro-col-icon">
+                                                <span>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11.333 21.3335L13.1368 18.3272C14.201 16.5536 16.7075 16.385 17.9997 18.0002C19.2918 19.6153 21.7984 19.4467 22.8626 17.6731L24.6663 14.6668M17.9997 28.0002V34.6668M4.66634 8.00016H31.333C33.174 8.00016 34.6663 6.50778 34.6663 4.66683C34.6663 2.82588 33.174 1.3335 31.333 1.3335H4.66634C2.82539 1.3335 1.33301 2.82588 1.33301 4.66683C1.33301 6.50778 2.82539 8.00016 4.66634 8.00016ZM2.99967 8.00016H32.9997V24.6668C32.9997 26.5078 31.5073 28.0002 29.6663 28.0002H6.33301C4.49206 28.0002 2.99967 26.5078 2.99967 24.6668V8.00016Z" stroke="#868E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                    
+                                                </span>
+                                            </div>
+                                            <div class="home-content-intro-col-heading">
+                                                <h4>Examples Questions </h4>
+                                            </div>
+                                            <div class="home-content-intro-col-inner-content simple-list-items">
+                                                <ul>
+                                                    <li>
+                                                        <p>“What are some effective ways to increase brand awareness?”</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“How do you measure the success of a brand campaign?”</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“What role does storytelling play in building a strong brand?”</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“What are some emerging trends in brand marketing and advertising?”</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-chat-form">
+                                <form action="">
+                                    <div class="chat-form-input">
+                                        <input type="text" placeholder="" id="" value="How people have interacted with Nike Brand?">
+                                    </div>
+                                    <div class="chat-form-submit">
+                                        <button type="submit">
+                                            <span>
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.9497 0.600034C16.9106 0.606284 16.8731 0.618784 16.8372 0.637534L0.837189 7.51253C0.695001 7.57503 0.602814 7.71566 0.599689 7.87035C0.596564 8.0266 0.685627 8.16878 0.824689 8.23753L6.78719 11.2125L9.76219 17.175C9.83094 17.3141 9.97313 17.4032 10.1294 17.4C10.2841 17.3969 10.4247 17.3047 10.4872 17.1625L17.3622 1.16253C17.4216 1.03128 17.4059 0.876596 17.32 0.760971C17.2356 0.643784 17.0934 0.582846 16.9497 0.600034ZM15.2497 2.18753L6.99969 10.4375L1.94969 7.91253L15.2497 2.18753ZM15.8122 2.75003L10.0872 16.05L7.56219 11L15.8122 2.75003Z" fill="white"/>
+                                                </svg>                                                    
+                                            </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="home-content-right">
+                            <div class="side-bar-close">
+                                <button>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <aside>
+                                <div class="side-nav">
+                                    <div class="new-chat">
+                                        <a href="#.">
+                                            <span class="chat-icon">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.375 1C5.375 0.654822 5.65482 0.375 6 0.375C6.34518 0.375 6.625 0.654822 6.625 1V5.375H11C11.3452 5.375 11.625 5.65482 11.625 6C11.625 6.34518 11.3452 6.625 11 6.625H6.625V11C6.625 11.3452 6.34518 11.625 6 11.625C5.65482 11.625 5.375 11.3452 5.375 11V6.625H1C0.654822 6.625 0.375 6.34518 0.375 6C0.375 5.65482 0.654822 5.375 1 5.375H5.375V1Z" fill="white"/>
+                                                </svg>                                                    
+                                            </span>
+                                            New Chat
+                                        </a>
+                                    </div>
+                                    <div class="recent-chats-list">
+                                        <ul>
+                                            <li class="active">
+                                                <a href="#.">
+                                                    <div class="recent-chat-flex">
+                                                        <div class="recent-chat-name">
+                                                            <span class="chat-icon">
+                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.16634 2.5H10.833C14.9751 2.5 18.333 5.85786 18.333 10V14.1667C18.333 16.0076 16.8406 17.5 14.9997 17.5H9.16634C5.0242 17.5 1.66634 14.1421 1.66634 10C1.66634 5.85786 5.0242 2.5 9.16634 2.5Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                    <circle cx="0.833333" cy="0.833333" r="0.833333" transform="matrix(-1 0 0 1 10.833 9.1665)" fill="white"/>
+                                                                    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(-1 0 0 1 7.5 9.1665)" fill="white"/>
+                                                                    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(-1 0 0 1 14.167 9.1665)" fill="white"/>
+                                                                </svg>                                                            
+                                                            </span>
+                                                            <span class="chat-item-text">Nike Brand</span>
+                                                        </div>
+                                                        <div class="recent-chat-charac">
+                                                            <span class="edit-chat">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 16.5H16.5M10.487 3.42643C10.487 3.42643 10.487 4.78861 11.8492 6.1508C13.2114 7.51299 14.5736 7.51299 14.5736 7.51299M5.09969 13.9901L7.96028 13.5814C8.37291 13.5225 8.7553 13.3313 9.05003 13.0365L15.9358 6.1508C16.6881 5.39848 16.6881 4.17874 15.9358 3.42642L14.5736 2.06424C13.8213 1.31192 12.6015 1.31192 11.8492 2.06424L4.96347 8.94997C4.66873 9.2447 4.47754 9.62709 4.41859 10.0397L4.00994 12.9003C3.91913 13.536 4.464 14.0809 5.09969 13.9901Z" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="delete-chat">
+                                                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14.8333 7.49984L14.2367 15.2555C14.1032 16.9921 12.655 18.3332 10.9132 18.3332H7.08677C5.34498 18.3332 3.89684 16.9921 3.76326 15.2555L3.16667 7.49984M16.5 5.83317C14.3351 4.77815 11.7614 4.1665 9 4.1665C6.23862 4.1665 3.66493 4.77815 1.5 5.83317M7.33333 4.1665V3.33317C7.33333 2.4127 8.07953 1.6665 9 1.6665C9.92047 1.6665 10.6667 2.4127 10.6667 3.33317V4.1665M7.33333 9.1665V14.1665M10.6667 9.1665V14.1665" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round"/>
+                                                                </svg>                                                                    
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#.">
+                                                    <div class="recent-chat-flex">
+                                                        <div class="recent-chat-name">
+                                                            <span class="chat-icon">
+                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.16634 2.5H10.833C14.9751 2.5 18.333 5.85786 18.333 10V14.1667C18.333 16.0076 16.8406 17.5 14.9997 17.5H9.16634C5.0242 17.5 1.66634 14.1421 1.66634 10C1.66634 5.85786 5.0242 2.5 9.16634 2.5Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                    <circle cx="0.833333" cy="0.833333" r="0.833333" transform="matrix(-1 0 0 1 10.833 9.1665)" fill="white"/>
+                                                                    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(-1 0 0 1 7.5 9.1665)" fill="white"/>
+                                                                    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(-1 0 0 1 14.167 9.1665)" fill="white"/>
+                                                                </svg>                                                            
+                                                            </span>
+                                                            <span class="chat-item-text">KFC</span>
+                                                        </div>
+                                                        <div class="recent-chat-charac">
+                                                            <span class="edit-chat">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 16.5H16.5M10.487 3.42643C10.487 3.42643 10.487 4.78861 11.8492 6.1508C13.2114 7.51299 14.5736 7.51299 14.5736 7.51299M5.09969 13.9901L7.96028 13.5814C8.37291 13.5225 8.7553 13.3313 9.05003 13.0365L15.9358 6.1508C16.6881 5.39848 16.6881 4.17874 15.9358 3.42642L14.5736 2.06424C13.8213 1.31192 12.6015 1.31192 11.8492 2.06424L4.96347 8.94997C4.66873 9.2447 4.47754 9.62709 4.41859 10.0397L4.00994 12.9003C3.91913 13.536 4.464 14.0809 5.09969 13.9901Z" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="delete-chat">
+                                                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14.8333 7.49984L14.2367 15.2555C14.1032 16.9921 12.655 18.3332 10.9132 18.3332H7.08677C5.34498 18.3332 3.89684 16.9921 3.76326 15.2555L3.16667 7.49984M16.5 5.83317C14.3351 4.77815 11.7614 4.1665 9 4.1665C6.23862 4.1665 3.66493 4.77815 1.5 5.83317M7.33333 4.1665V3.33317C7.33333 2.4127 8.07953 1.6665 9 1.6665C9.92047 1.6665 10.6667 2.4127 10.6667 3.33317V4.1665M7.33333 9.1665V14.1665M10.6667 9.1665V14.1665" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round"/>
+                                                                </svg>                                                                    
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#.">
+                                                    <div class="recent-chat-flex">
+                                                        <div class="recent-chat-name">
+                                                            <span class="chat-icon">
+                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.16634 2.5H10.833C14.9751 2.5 18.333 5.85786 18.333 10V14.1667C18.333 16.0076 16.8406 17.5 14.9997 17.5H9.16634C5.0242 17.5 1.66634 14.1421 1.66634 10C1.66634 5.85786 5.0242 2.5 9.16634 2.5Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                    <circle cx="0.833333" cy="0.833333" r="0.833333" transform="matrix(-1 0 0 1 10.833 9.1665)" fill="white"/>
+                                                                    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(-1 0 0 1 7.5 9.1665)" fill="white"/>
+                                                                    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(-1 0 0 1 14.167 9.1665)" fill="white"/>
+                                                                </svg>                                                            
+                                                            </span>
+                                                            <span class="chat-item-text">PUMA</span>
+                                                        </div>
+                                                        <div class="recent-chat-charac">
+                                                            <span class="edit-chat">
+                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M1.5 16.5H16.5M10.487 3.42643C10.487 3.42643 10.487 4.78861 11.8492 6.1508C13.2114 7.51299 14.5736 7.51299 14.5736 7.51299M5.09969 13.9901L7.96028 13.5814C8.37291 13.5225 8.7553 13.3313 9.05003 13.0365L15.9358 6.1508C16.6881 5.39848 16.6881 4.17874 15.9358 3.42642L14.5736 2.06424C13.8213 1.31192 12.6015 1.31192 11.8492 2.06424L4.96347 8.94997C4.66873 9.2447 4.47754 9.62709 4.41859 10.0397L4.00994 12.9003C3.91913 13.536 4.464 14.0809 5.09969 13.9901Z" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="delete-chat">
+                                                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M14.8333 7.49984L14.2367 15.2555C14.1032 16.9921 12.655 18.3332 10.9132 18.3332H7.08677C5.34498 18.3332 3.89684 16.9921 3.76326 15.2555L3.16667 7.49984M16.5 5.83317C14.3351 4.77815 11.7614 4.1665 9 4.1665C6.23862 4.1665 3.66493 4.77815 1.5 5.83317M7.33333 4.1665V3.33317C7.33333 2.4127 8.07953 1.6665 9 1.6665C9.92047 1.6665 10.6667 2.4127 10.6667 3.33317V4.1665M7.33333 9.1665V14.1665M10.6667 9.1665V14.1665" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round"/>
+                                                                </svg>                                                                    
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

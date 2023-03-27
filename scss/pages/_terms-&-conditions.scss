@@ -1,0 +1,83 @@
+.terms-privacy-banner-section {
+    padding: 100px 0 160px;
+    background-color: $swamp;
+    .about-intro-flex {
+        @include disp-flex-wr;
+        align-items: flex-start;
+        gap: 20px;
+        .about-intro-icon {
+            width: 78px;
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+        .about-intro-content-container {
+            max-width: 525px;
+            h1 {
+                font-weight: 400;
+                font-size: $f-33;
+                line-height: 45px;
+                color: $geyser;
+            }
+            p {
+                font-weight: 400;
+                font-size: $f-24;
+                line-height: 33px;
+                color: $white;
+                opacity: 0.8;
+                margin: 14px 0px 0px;
+            }
+        }
+    }
+}
+
+.terms-privacy-detail-content {
+    background: #0F3443;
+    border-bottom: 1px solid #0F3443;
+    padding: 80px 0px;
+    .terms-privacy-detail-inner {
+        max-width: 720px;
+        margin: auto;
+        p {
+            font-weight: 400;
+            font-size: $f-18;
+            line-height: 28px;
+            color: $white;
+            opacity: 0.7;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            @include media-max(640px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+        ul {
+            li {
+                margin: 0 0 0 15px;
+                list-style: number;
+                opacity: 0.7;
+                padding: 0 0 0 5px;
+            }
+        }
+        h3 {
+            font-weight: 700;
+            font-size: $f-30;
+            line-height: 38px;
+            color: $geyser;
+            margin: 48px 0 20px;
+            @include media-max(640px) {
+                margin: 20px 0;
+            }
+        }
+        .terms-privacy-detail-inner {
+            ul {
+                li {
+                    padding: 0 0 0 20px;
+                    list-style: auto;
+                }
+            }            
+        }
+    }
+}

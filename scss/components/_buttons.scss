@@ -1,0 +1,76 @@
+.athens-gray-btn-pill {
+    background-color: $athens-gray;
+    color: $swamp;
+    font-size: $f-18;
+    border-radius: $radius-46;
+    border: 1px solid $porcelain;
+    padding: $padding-17 $padding-24;
+}
+
+.spring-green-btn-pill {
+    background-color: $spring-green;
+    color: $swamp;
+    font-size: $f-18;
+    border-radius: $radius-46;
+    padding: $padding-17 $padding-24;
+}
+
+.spring-green-fade-btn-pill {
+    background-color: $spring-green-fade;
+    color: $gull-gray;
+    font-size: $f-18;
+    border-radius: $radius-46;
+    padding: $padding-17 $padding-24;
+}
+
+.red-linear-gradient-button {
+    background: $red-linear;
+    color: $white;
+    border-radius: 4px;
+    line-height: $line-height-20;
+    font-size: $f-16;
+    font-weight: 700;
+    padding: 18px 60px;
+}
+
+.gull-gray-btn {
+    background-color: $gull-gray;
+    color: $white;
+    border-radius: 4px;
+    line-height: $line-height-20;
+    font-size: $f-16;
+    font-weight: 700;
+    padding: 18px 60px;
+}
+
+.white-btn {
+    background-color: $white;
+    color: $spring-green-fade;
+    border-radius: 4px;
+    line-height: $line-height-20;
+    font-size: $f-16;
+    font-weight: 700;
+    padding: 18px 60px;
+}
+
+.spring-green-btn {
+    background-color: transparent;
+    color: $spring-green-fade;
+    border-radius: 4px;
+    line-height: $line-height-20;
+    font-size: $f-16;
+    font-weight: 700;
+    padding: 18px 60px;
+    border: 1px solid $spring-green-fade;
+}
+
+.cfr-blue-btn {
+    background-color: $cfr-blue;
+    color: $spring-green-fade;
+    border-radius: 4px;
+    line-height: $line-height-20;
+    font-size: $f-16;
+    font-weight: 700;
+    padding: 18px 60px;
+    border: 1px solid $spring-green-fade;
+}
